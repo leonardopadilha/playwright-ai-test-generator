@@ -70,12 +70,12 @@ Validar se o sistema retorna o registro correto ao pesquisar um funcionário uti
 
 #### Passos
 
-| Id | Ação | Resultado Esperado |
-|----|------|--------------------|
-| 1  | Acessar o menu "PIM" e a aba "Employee List". | A tela de busca de informações de empregados é exibida. |
-| 2  | No campo "Employee Name", digitar as primeiras letras do nome do funcionário. | O sistema exibe uma lista de sugestões (hints) correspondente aos caracteres digitados. |
-| 3  | Selecionar o nome completo na lista de sugestões. | O campo é preenchido com o nome selecionado. |
-| 4  | Clicar no botão "Search". | O sistema processa a busca e exibe o registro específico na tabela de resultados abaixo. |
+| Id | Ação                                                                          | Resultado Esperado                                                                       |
+|----|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| 1  | Acessar o menu "PIM" e a aba "Employee List".                                 | A tela de busca de informações de empregados é exibida.                                  |
+| 2  | No campo "Employee Name", digitar as primeiras letras do nome do funcionário. | O sistema exibe uma lista de sugestões (hints) correspondente aos caracteres digitados.  |
+| 3  | Selecionar o nome completo na lista de sugestões.                             | O campo é preenchido com o nome selecionado.                                             |
+| 4  | Clicar no botão "Search".                                                     | O sistema processa a busca e exibe o registro específico na tabela de resultados abaixo. |
 
 #### Resultados Esperados
 - O registro exibido na grid de resultados deve corresponder exatamente ao nome selecionado no filtro.
