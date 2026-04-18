@@ -23,7 +23,7 @@ Criar cenários de teste manualmente é:
 ## 💡 Diferenciais do projeto
 
 * 🤖 Geração automática de cenários via LLM (OpenAI / Gemini)
-* ⚡ Reutilização de login com `storageState` por worker
+* ⚡ Reutilização de login com `storageState` persistido entre execuções
 * 🧱 Arquitetura baseada em fixtures do Playwright
 * 🧪 Execução paralela otimizada
 * 📄 Geração automática de documentação de testes (.md)
@@ -94,16 +94,20 @@ Validar se o sistema retorna o registro correto ao pesquisar um funcionário uti
 * `pages/` → Page Objects
 * `llm/` → integração com IA
 * `e2e/` → testes
+* `setup/sessions/` → sessões de autenticação persistidas entre execuções
 
 ---
 
 ## 🔐 Otimização de autenticação
 
-Uso de fixture com escopo `worker`:
+Uso de fixture com escopo `worker` combinada com persistência de sessão em disco:
 
-✔ login executado uma única vez
-✔ reaproveitamento de sessão
+✔ login executado apenas na primeira execução
+✔ sessão salva em `playwright/setup/sessions/` e reutilizada nas execuções seguintes
+✔ nenhuma tela de login visível durante os testes após a primeira execução
 ✔ testes mais rápidos
+
+> Para forçar um novo login (ex: sessão expirada), basta deletar os arquivos da pasta `playwright/setup/sessions/`.
 
 ---
 
