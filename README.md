@@ -51,7 +51,7 @@ npm test
 ---
 
 ## 🎥 Demonstração
-![Demonstração do projeto](./docs/videos/demo-playwright-ai.mp4)
+![Demonstração do projeto](./playwright/docs/videos/demo-playwright-ai.mp4)
 ---
 
 ## 📸 Exemplo de saída da IA
