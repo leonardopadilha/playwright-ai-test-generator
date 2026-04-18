@@ -50,26 +50,8 @@ npm test
 
 ---
 
-## 🎥 Demonstração
+## 🎥 Geração de cenários com IA
 ![Demonstração do projeto](./playwright/docs/videos/demo-playwright-ai.gif)
----
-
-## 🎥 Demonstração MCP Playwright iniciando a execução
-![MCP Playwright em execução](./playwright/docs/videos/demo-mcp-playwright.gif)
----
-
-## 💬 Prompt utilizado para geração via MCP Playwright
-
-Prompt que originou os cenários em `playwright/e2e/employerListMCPPage.spec.ts`:
-
-```text
-utilizando o MCP do playwright execute os cenários descritos em @playwright/docs/tests/casos_de_teste_lista_empregados.md, siga as regras descritas em @playwright/docs/prompt/prompt-qa-playwright-automator.md
-
-Execute os cenários até que estejam passando com sucesso, em caso de falha itere novamente até que ele seja concluído com sucesso e só então gerar o código em typescript seguindo a arquitetura do projeto que está utilizando page objects mas no arquivo .spec as informações são importadas do arquivo de @playwright/setup/fixtures.ts
-
-Não altere o arquivo @playwright/e2e/employerListPage.spec.ts. Analise primeiro os arquivos @playwright/e2e/dashboard.spec.ts e @playwright/e2e/login.spec.ts para entender melhor a estrutura do projeto e só depois caso não exista, crie um novo arquivo chamado employerListMCPPage com os testes gerados pelo MCP PLAYWRIGHT.
-```
-
 ---
 
 ## 📸 Exemplo de saída da IA
@@ -102,6 +84,23 @@ Validar se o sistema retorna o registro correto ao pesquisar um funcionário uti
 - O componente de autocomplete deve carregar as sugestões em menos de 2 segundos.
 - A grid de resultados deve ser atualizada conforme o filtro aplicado.
 
+```
+---
+
+## 🎥 MCP executando testes automaticamente
+![MCP Playwright em execução](./playwright/docs/videos/demo-mcp-playwright.gif)
+---
+
+## 💬 Prompt utilizado para geração via MCP Playwright
+
+Prompt que originou os cenários em `playwright/e2e/employerListMCPPage.spec.ts`:
+
+```text
+utilizando o MCP do playwright execute os cenários descritos em @playwright/docs/tests/casos_de_teste_lista_empregados.md, siga as regras descritas em @playwright/docs/prompt/prompt-qa-playwright-automator.md
+
+Execute os cenários até que estejam passando com sucesso, em caso de falha itere novamente até que ele seja concluído com sucesso e só então gerar o código em typescript seguindo a arquitetura do projeto que está utilizando page objects mas no arquivo .spec as informações são importadas do arquivo de @playwright/setup/fixtures.ts
+
+Não altere o arquivo @playwright/e2e/employerListPage.spec.ts. Analise primeiro os arquivos @playwright/e2e/dashboard.spec.ts e @playwright/e2e/login.spec.ts para entender melhor a estrutura do projeto e só depois caso não exista, crie um novo arquivo chamado employerListMCPPage com os testes gerados pelo MCP PLAYWRIGHT.
 ```
 
 ---
