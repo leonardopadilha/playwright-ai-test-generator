@@ -1,3 +1,15 @@
+## Tecnologias Utilizadas
+
+[![Node.js](https://img.shields.io/badge/Node.js-LTS-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Playwright](https://img.shields.io/badge/Playwright-1.58-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev/)
+[![LangChain](https://img.shields.io/badge/LangChain-1.3-1C3C3C?logo=langchain&logoColor=white)](https://js.langchain.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-412991?logo=openai&logoColor=white)](https://platform.openai.com/)
+[![Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?logo=googlegemini&logoColor=white)](https://aistudio.google.com/)
+[![dotenv](https://img.shields.io/badge/dotenv-17-ECD53F?logo=dotenv&logoColor=black)](https://github.com/motdotla/dotenv)
+
+---
+
 # 🚀 OrangeHRM E2E Automation + AI (Playwright + LLM)
 
 Projeto de automação de testes End-to-End utilizando **Playwright + TypeScript**, com um diferencial importante:
@@ -37,6 +49,14 @@ npm install
 npx playwright install
 npm test
 ```
+
+---
+
+## Pré-requisitos
+
+- [Node.js](https://nodejs.org/) LTS (v18 ou superior)
+- npm
+- Chave de API da [OpenAI](https://platform.openai.com/api-keys) e/ou do [Google AI Studio](https://aistudio.google.com/app/apikey)
 
 ---
 
