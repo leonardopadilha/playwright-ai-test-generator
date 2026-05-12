@@ -9,7 +9,8 @@
     "test:ch": "npx playwright test --project=chromium",
     "test:cen": "npx playwright test",
     "test:debug": "npx playwright test --debug",
-    "test:codegen": "npx playwright codegen"
+    "test:codegen": "npx playwright codegen",
+    "review:mcp": "npx tsx playwright/scripts/run-mcp-review.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,8 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.4.0"
+    "@types/node": "^25.4.0",
+    "tsx": "^4.19.3"
   },
   "dependencies": {
     "@langchain/core": "^1.1.40",

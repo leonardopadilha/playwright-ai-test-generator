@@ -1,0 +1,14 @@
+---
+description: Ao trabalhar em testes gerados pelo MCP Playwright, use o prompt do revisor e a convenção .mcp.spec.ts
+globs: **/*.mcp.spec.ts
+alwaysApply: false
+---
+
+# Revisão de código MCP (Playwright)
+
+- **Alvo da revisão:** arquivos `*.mcp.spec.ts` em [playwright/e2e/](playwright/e2e/) (código gerado via MCP).
+- **Prompt do revisor:** [playwright/docs/prompt/prompt-create-reviewer.md](playwright/docs/prompt/prompt-create-reviewer.md) — substitui `{{CONTEXT_FILES}}` e `{{TEST_FILES}}` pelos trechos dos arquivos ou peça ao agente para seguir esse formato.
+- **Regras do gerador (alinhamento):** [playwright/docs/prompt/prompt-qa-playwright-automator.md](playwright/docs/prompt/prompt-qa-playwright-automator.md).
+- **Execução automatizada (LLM + relatório em disco):** `npm run review:mcp` — grava `playwright/docs/reviews/json/mcp-review-<spec>.json` e `.../relatorio/mcp-review-<spec>.md` (ex.: `employerList.mcp.spec.ts` → `mcp-review-employerList`). Cada execução **substitui** esses arquivos (sem timestamp). Opções: `--out employerList` (sufixo após `mcp-review-`), `--provider openai|gemini`. Requer `OPENAI_API_KEY` ou `GOOGLE_API_KEY` e opcionalmente `LLM_PROVIDER` no `.env`.
+
+Não use este fluxo como padrão para specs manuais (`*.spec.ts` sem `.mcp.`).
